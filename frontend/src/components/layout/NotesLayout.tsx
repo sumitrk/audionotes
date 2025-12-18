@@ -25,6 +25,7 @@ const note2 : Note = {
   status: 'ready'
 }
 
+
 function  NotesLayout() {
   return (
     <div className="p-3 h-full overflow-auto"> 

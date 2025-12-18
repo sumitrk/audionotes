@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button"
 import { useAudioRecorder } from "@/hooks/useAudioRecorder"
 
 
-
 function RecordingBar() {
 
   const {isRecording, audioUrl, startRecording, stopRecording} = useAudioRecorder()

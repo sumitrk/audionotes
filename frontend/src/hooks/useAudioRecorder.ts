@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import { uploadAudio } from "@/api/audio"
 
 export function useAudioRecorder(){
     const mediaRecorderRef = useRef<MediaRecorder | null>(null)
@@ -18,9 +19,11 @@ export function useAudioRecorder(){
             }
         }
         recorder.onstop = () => {
-            const audioBlob = new Blob(chunksRef.current, {type: 'audio/wav'})
+            const audioBlob = new Blob(chunksRef.current, {type: 'audio/webm'})
             const audioUrl = URL.createObjectURL(audioBlob)
             setAudioUrl(audioUrl)
+            console.log(audioUrl)
+            uploadAudio(audioBlob)
         }
 
         recorder.start()
