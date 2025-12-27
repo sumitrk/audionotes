@@ -1,13 +1,10 @@
-
-export interface Note {
-    id: number,
-    title: string,
-    body: string,
-    createdAt: string,
-    durationSections?: number,
-    tags: string[],
-    isFavourite: boolean;
-    status: 'ready' | 'generating'
-
-}
-
+export type Note = {
+  id: string;
+  title: string;
+  body: string;
+  created_at: string;
+  duration?: number;
+  tags?: string[];
+  is_favourite?: boolean;
+  status?: "uploading" | "processing" | "ready" | "error";
+};

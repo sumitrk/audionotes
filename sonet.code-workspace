@@ -1,0 +1,18 @@
+{
+    "folders": [
+      {
+        "name": "🔴 Backend",
+        "path": "backend"
+      },
+      {
+        "name": "🔵 Frontend",
+        "path": "frontend"
+      },
+      {
+        "name": "🟢 Transcription",
+        "path": "transcription"
+      }
+    ],
+    "settings": {},
+    
+  }

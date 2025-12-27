@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import notesRouter from "./notes.js"
+import notesRouter from "./routes/notes.js"
 
 
 const app = express()
